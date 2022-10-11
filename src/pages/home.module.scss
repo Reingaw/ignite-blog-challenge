@@ -1,1 +1,50 @@
-// TODO
+.contentContainer {
+    max-width: 720px;
+    margin: 0 auto;
+    height: 100vh;
+  }
+  
+  .posts {
+    a {
+      display: block;
+  
+      & + a {
+        margin-top: 2rem;
+      }
+    }
+  }
+  
+  .contentPost {
+    h1 {
+      margin-bottom: 0.5rem;
+    }
+  
+    h2 {
+      margin: 0.5rem 0 2rem;
+      font-size: 18px;
+      line-height: 22px;
+      color: var(--gray-400);
+      font-weight: 400;
+    }
+  }
+  
+  .dayAuthorInfo {
+    display: flex;
+    align-items: center;
+  
+    div {
+      svg {
+        margin-right: 0.5rem;
+      }
+  
+      margin-right: 1.75rem;
+    }
+  }
+  
+  .highlightButton {
+    margin-top: 4rem;
+    background-color: transparent;
+    border: 0;
+  
+    color: var(--pink);
+  }
