@@ -1,0 +1,9 @@
+{
+  "id": "zaoblogchallenge",
+  "label": "ZaoBlogChallenge",
+  "repeatable": true,
+  "status": true,
+  "json": {
+    "Main": {}
+  }
+}

@@ -1,8 +1,8 @@
-import {Document} from '@prismicio/client/types/documents';
+import {PrismicDocument } from '@prismicio/types';
 import { format } from 'date-fns';
 import ptBR from 'date-fns/locale/pt-BR';
 
-export function getPostsFormatted(posts: Document[]) {
+export function getPostsFormatted(posts: PrismicDocument []) {
 const formattedPosts = posts.map(post => {
     return {
       uid: post.uid,
