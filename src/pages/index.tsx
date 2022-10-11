@@ -99,8 +99,8 @@ export default function Home({ postsPagination }: HomeProps) {
 
 export const getStaticProps: GetStaticProps = async () => {
   const prismic = getPrismicClient();
-  const postsResponse = await prismic.getByType(
-    Prismic.Predicates.at('document.type', 'post'),
+  const postsResponse = await prismic.query(
+    [Prismic.Predicates.at('document.type', 'post')],
     {
       fetch: ['post.title', 'post.subtitle', 'post.author'],
     }
